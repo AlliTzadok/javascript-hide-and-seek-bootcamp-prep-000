@@ -25,10 +25,10 @@ function deepestChild(){
   var node = document.getElementById('grand-node')
   var childNode = node.children[0]
   
-  do {
+  while{
+    node = childNode
     childNode = node.children[0];
   }
-  while (node = childNode);
   return node;
 }
 
